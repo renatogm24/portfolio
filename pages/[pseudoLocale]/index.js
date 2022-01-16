@@ -71,6 +71,19 @@ export default function Home({ pseudoLocale, titleHeader }) {
           java: "Project using JAVA made on the Coding Dojo bootcamp",
         },
       },
+      experience: {
+        code: {
+          javascript: `{                   group: "Backend",
+              language: "NodeJS",
+            framework: "Express",
+          achivement: "Black Belt Coding Dojo",
+                      stack: "MERN"
+                 learntBy: "2021/10"
+                 projects: ["enelmarket.com","MERN project"],
+    mainConcepts: ["View Engines","Middleware","Express Router"]
+           comments: "Start learning by myself on The Odin Project, mastered on the Coding Dojo Bootcamp" }`,
+        },
+      },
     },
     es: {
       laguage: "spanish",
@@ -104,6 +117,19 @@ export default function Home({ pseudoLocale, titleHeader }) {
           python: "Proyecto usando Python hecho en el bootcamp de Coding Dojo",
           mern: "Proyecto usando MERN hecho en el bootcamp de Coding Dojo",
           java: "Proyecto usando JAVA hecho en el bootcamp de Coding Dojo",
+        },
+      },
+      experience: {
+        code: {
+          javascript: `{        group: "Backend",
+      language: "NodeJS",
+     framework: "Express",
+    achivement: "Black Belt Coding Dojo",
+         stack: "MERN"
+      learntBy: "2021/10"
+      projects: ["enelmarket.com","MERN project"],
+  mainConcepts: ["View Engines","Middleware","Express Router"]
+      comments: "Start learning by myself on The Odin Project, mastered on the Coding Dojo Bootcamp" }`,
         },
       },
     },
@@ -888,6 +914,16 @@ export default function Home({ pseudoLocale, titleHeader }) {
                   </svg>
                 </div>
               </div>
+            </div>
+            <div className={styles.codeBx}>
+              <CodeBlock
+                text={siteInfo.experience.code.javascript}
+                language={"javascript"}
+                showLineNumbers={false}
+                startingLineNumber={1}
+                theme={codeTheme}
+                wrapLines
+              />
             </div>
           </div>
         </section>

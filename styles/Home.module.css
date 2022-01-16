@@ -500,6 +500,14 @@
     border-top: 28.87px solid #f8466e;
 }
 
+.codeBx {
+    display: flex;
+    justify-content: center;
+    min-width: 350px;
+    max-width: 500px;
+    margin: 30px auto 0;
+}
+
 @media (max-width: 600px) {
     .menu {
         position: fixed;
