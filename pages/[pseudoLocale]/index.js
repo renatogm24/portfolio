@@ -82,6 +82,54 @@ export default function Home({ pseudoLocale, titleHeader }) {
                  projects: ["enelmarket.com","MERN project"],
     mainConcepts: ["View Engines","Middleware","Express Router"]
            comments: "Start learning by myself on The Odin Project, mastered on the Coding Dojo Bootcamp" }`,
+          python: `{                   group: "Backend",
+              language: "Python",
+            framework: "Flask",
+          achivement: "Black Belt Coding Dojo",
+                      stack: "Flask + MySQL"
+                 learntBy: "2022/01"
+                 projects: ["Python project"],
+    mainConcepts: ["OOP"]
+           comments: "Mastered on the Coding Dojo Bootcamp" }`,
+          java: `{                   group: "Backend",
+              language: "Java",
+            framework: "Spring",
+          achivement: "Black Belt Coding Dojo",
+                      stack: "Spring + MySQL"
+                 learntBy: "2016/01"
+                 projects: ["Spring project"],
+    mainConcepts: ["OOP"]
+           comments: "This was the first programming language I learned, which makes me love programming. Now I have update my Spring knowledge about it" }`,
+          react: `{                   group: "Frontend",
+              language: "Javascript",
+            framework: "React",
+          achivement: "Black Belt Coding Dojo",
+                      stack: "MERN"
+                 learntBy: "2020/10"
+                 projects: ["MERN Project"],
+    mainConcepts: ["OOP"]
+           comments: "Start learning by myself on The Odin Project, mastered on the Coding Dojo Bootcamp" }`,
+          nextjs: `{                   group: "Frontend",
+              language: "Javascript",
+            framework: "NextJS",
+          achivement: "Over 500+ hours",
+                      stack: "NextJS + GraphQL + Express + Apollo"
+                 learntBy: "2021/10"
+                 projects: ["enelmarket.com"],
+    mainConcepts: ["OOP"]
+           comments: "Learnt by myself in order to create 'enelmarket.com' project" }`,
+          mongodb: `{                   group: "Database",
+              database: "MongoDB",
+          achivement: "Over 250+ hours and MongoDB Basic (Mongo University)",
+                 learntBy: "2021/10"
+                 projects: ["enelmarket.com"],
+           comments: "Used with Apollo Server + GraphQL" }`,
+          mysql: `{                   group: "Database",
+              database: "MySQL",
+          achivement: "Over 500+ hours",
+                 learntBy: "2021/10"
+                 projects: ["Java Project","Python Project"],
+           comments: "Used with Java y Python" }`,
         },
       },
     },
@@ -130,6 +178,54 @@ export default function Home({ pseudoLocale, titleHeader }) {
              proyectos: ["enelmarket.com","MERN project"],
      conceptosPrin: ["View Engines","Middleware","Express Router"]
         comentarios: "Comence aprendiendo por mi cuenta con 'The Odin Project', logre dominarlo dentro del bootcamp de Coding Dojo" }`,
+          python: `{                   grupo: "Backend",
+                lenguaje: "Python",
+            framework: "Flask",
+                    logros: "Black Belt Coding Dojo",
+                      stack: "Flask + MySQL"
+        aprendidoEn: "01/2022"
+             proyectos: ["Python project"],
+     conceptosPrin: ["OOP"]
+        comentarios: "Logre dominarlo dentro del bootcamp de Coding Dojo" }`,
+          java: `{                   grupo: "Backend",
+                lenguaje: "Java",
+            framework: "Spring",
+                    logros: "Black Belt Coding Dojo",
+                      stack: "Spring + MySQL"
+        aprendidoEn: "01/2016"
+             proyectos: ["Java project"],
+     conceptosPrin: ["OOP"]
+        comentarios: "Este fue el primer lenguaje de programación que aprendi, el que me hizo apasionar sobre programar. Ahora he actualizado mis conocimmientos sobre el Framework Spring" }`,
+          react: `{                   grupo: "Frontend",
+                lenguaje: "Javascript",
+            framework: "React",
+                    logros: "Black Belt Coding Dojo",
+                      stack: "MERN"
+        aprendidoEn: "10/2020"
+             proyectos: ["MERN project"],
+     conceptosPrin: ["OOP"]
+        comentarios: "Comence aprendiendo por mi cuenta con 'The Odin Project', logre dominarlo dentro del bootcamp de Coding Dojo" }`,
+          nextjs: `{                   grupo: "Frontend",
+                lenguaje: "Javascript",
+            framework: "NextJS",
+                    logros: "Con 500+ horas",
+                      stack: "NextJS + GraphQL + Express + Apollo"
+        aprendidoEn: "10/2021"
+             proyectos: ["enelmarket.com"],
+     conceptosPrin: ["OOP"]
+        comentarios: "Aprendi el siguiente stack por mi cuenta para crear el proyecto 'enelmarket'" }`,
+          mongodb: `{                   grupo: "Database",
+            baseDatos: "MongoDB",
+                    logros: "Con 250+ horas y curso basico de MongoDB (Mongo University)",
+        aprendidoEn: "10/2021"
+             proyectos: ["enelmarket.com"],
+        comentarios: "Usado con Apollo Server + GraphQL" }`,
+          mysql: `{                   grupo: "Database",
+            baseDatos: "MySQL",
+                    logros: "Con 500+ horas",
+        aprendidoEn: "10/2021"
+             proyectos: ["Java Project","Python Project"],
+        comentarios: "Usado con Java y Python" }`,
         },
       },
     },
@@ -982,7 +1078,7 @@ export default function Home({ pseudoLocale, titleHeader }) {
             </div>
             <div className={styles.codeBx}>
               <CodeBlock
-                text={siteInfo.experience.code.javascript}
+                text={siteInfo.experience.code[svgSelected]}
                 language={"javascript"}
                 showLineNumbers={false}
                 startingLineNumber={1}
