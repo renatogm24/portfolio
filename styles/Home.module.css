@@ -1,6 +1,6 @@
 .container {
     min-height: 100vh;
-    max-width: 750px;
+    max-width: 770px;
     background-color: #f9fafb;
     margin: 0 auto;
     padding: 0px;
@@ -92,7 +92,7 @@
 
 .navBar {
     width: 100%;
-    max-width: 750px;
+    max-width: 770px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -268,8 +268,8 @@
 
 .work .cardsWorkBx .cardWork {
     width: 50%;
-    min-width: 350px;
-    height: 200px;
+    min-width: 360px;
+    height: 210px;
     padding: 10px 10px;
 }
 
