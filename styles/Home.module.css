@@ -500,12 +500,37 @@
     border-top: 28.87px solid #f8466e;
 }
 
+.hexagon,
+.hexagon2,
+.hexagon3 {
+    cursor: pointer;
+}
+
 .codeBx {
     display: flex;
     justify-content: center;
     min-width: 350px;
     max-width: 500px;
     margin: 30px auto 0;
+}
+
+.svgBase {
+    position: relative;
+    bottom: 0px;
+    transition: 0.4s;
+}
+
+.svgSelected {
+    filter: invert(0.75) drop-shadow(-2px -2px 2px #4d5d76);
+}
+
+.svgSelected2 {
+    filter: invert(0.2) drop-shadow(-2px -2px 2px #4d5d76);
+}
+
+.svgBase:hover,
+.svgSelected:hover {
+    bottom: 6px;
 }
 
 @media (max-width: 600px) {
