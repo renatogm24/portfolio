@@ -72,6 +72,7 @@ export default function Home({ pseudoLocale, titleHeader }) {
         },
       },
       experience: {
+        select: "Select a medal!",
         code: {
           javascript: `{                   group: "Backend",
               language: "NodeJS",
@@ -177,6 +178,7 @@ export default function Home({ pseudoLocale, titleHeader }) {
         },
       },
       experience: {
+        select: "¡Selecciona una medalla!",
         code: {
           javascript: `{                   grupo: "Backend",
                 lenguaje: "NodeJS",
@@ -1096,7 +1098,7 @@ export default function Home({ pseudoLocale, titleHeader }) {
                 </div>
               </div>
             </div>
-            <h3>Select a medal!</h3>
+            <h3>{siteInfo.experience.select}</h3>
             <div className={styles.codeBx}>
               <CodeBlock
                 text={siteInfo.experience.code[svgSelected]}
