@@ -132,6 +132,15 @@ export default function Home({ pseudoLocale, titleHeader }) {
            comments: "Used with Java y Python" }`,
         },
       },
+      contact: {
+        desc: "Have a project in mind? Let's chat!",
+        firstName: "First Name",
+        lastName: "Last Name",
+        email: "Email",
+        mobile: "Mobile",
+        message: "Message",
+        send: "Send",
+      },
     },
     es: {
       laguage: "spanish",
@@ -227,6 +236,15 @@ export default function Home({ pseudoLocale, titleHeader }) {
              proyectos: ["Java Project","Python Project"],
         comentarios: "Usado con Java y Python" }`,
         },
+      },
+      contact: {
+        desc: "¿Tienes un proyecto en mente? ¡Conversemos!",
+        firstName: "Nombres",
+        lastName: "Apellidos",
+        email: "Correo",
+        mobile: "Telefono",
+        message: "Mensaje",
+        send: "Enviar",
       },
     },
   };
@@ -363,18 +381,19 @@ export default function Home({ pseudoLocale, titleHeader }) {
                   {siteInfo.menu[3]}
                 </li>
               </a>
-
-              <li
-                className={
-                  optionSelected === siteInfo.menu[4] ? styles.active : ""
-                }
-                onClick={() => {
-                  setOpenMenu(!openMenu);
-                  setOptionSelected(siteInfo.menu[4]);
-                }}
-              >
-                {siteInfo.menu[4]}
-              </li>
+              <a href="#contact">
+                <li
+                  className={
+                    optionSelected === siteInfo.menu[4] ? styles.active : ""
+                  }
+                  onClick={() => {
+                    setOpenMenu(!openMenu);
+                    setOptionSelected(siteInfo.menu[4]);
+                  }}
+                >
+                  {siteInfo.menu[4]}
+                </li>
+              </a>
             </ul>
           </div>
           <div className={styles.navOptions}>
@@ -1076,6 +1095,7 @@ export default function Home({ pseudoLocale, titleHeader }) {
                 </div>
               </div>
             </div>
+            <h3>Select a medal!</h3>
             <div className={styles.codeBx}>
               <CodeBlock
                 text={siteInfo.experience.code[svgSelected]}
@@ -1085,6 +1105,59 @@ export default function Home({ pseudoLocale, titleHeader }) {
                 theme={codeTheme}
                 wrapLines={true}
               />
+            </div>
+          </div>
+        </section>
+        <section
+          className={`${styles.contact} ${dark ? styles.dark : ""}`}
+          id="contact"
+        >
+          <div className={styles.title}>
+            <h2>{siteInfo.menu[4]}</h2>
+            <p>{siteInfo.contact.desc}</p>
+          </div>
+          <div className={styles.contactForm}>
+            <div className={styles.row}>
+              <div className={styles.col50}>
+                <input
+                  type="text"
+                  name=""
+                  placeholder={siteInfo.contact.firstName}
+                />
+              </div>
+              <div className={styles.col50}>
+                <input
+                  type="text"
+                  name=""
+                  placeholder={siteInfo.contact.lastName}
+                />
+              </div>
+            </div>
+            <div className={styles.row}>
+              <div className={styles.col50}>
+                <input
+                  type="text"
+                  name=""
+                  placeholder={siteInfo.contact.email}
+                />
+              </div>
+              <div className={styles.col50}>
+                <input
+                  type="text"
+                  name=""
+                  placeholder={siteInfo.contact.mobile}
+                />
+              </div>
+            </div>
+            <div className={styles.row}>
+              <div className={styles.col100}>
+                <textarea placeholder={siteInfo.contact.message}></textarea>
+              </div>
+            </div>
+            <div className={styles.row}>
+              <div className={styles.col100}>
+                <input type="submit" value={siteInfo.contact.send} />
+              </div>
             </div>
           </div>
         </section>
