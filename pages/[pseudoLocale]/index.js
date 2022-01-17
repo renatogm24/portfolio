@@ -269,16 +269,15 @@ export default function Home({ pseudoLocale, titleHeader }) {
 
   function logit() {
     setScrollY(window.pageYOffset);
-    console.log(scrollY);
     if (scrollY < 800) {
       setOptionSelected(siteInfo.menu[0]);
     } else if (scrollY > 800 && scrollY < 1400) {
       setOptionSelected(siteInfo.menu[1]);
     } else if (scrollY > 1400 && scrollY < 3000) {
       setOptionSelected(siteInfo.menu[2]);
-    } else if (scrollY > 3000 && scrollY < 4300) {
+    } else if (scrollY > 3000 && scrollY < 4000) {
       setOptionSelected(siteInfo.menu[3]);
-    } else if (scrollY > 4300) {
+    } else if (scrollY > 4000) {
       setOptionSelected(siteInfo.menu[4]);
     }
   }
