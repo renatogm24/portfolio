@@ -92,7 +92,7 @@
 
 .navBar {
     width: 100%;
-    max-width: 770px;
+    max-width: 900px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -273,7 +273,7 @@
 .work .cardsWorkBx .cardWork {
     width: 50%;
     min-width: 360px;
-    height: 210px;
+    height: 250px;
     padding: 10px 10px;
 }
 
@@ -372,6 +372,7 @@
     text-align: justify;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .cardWorkContent .cardDescAndTech .cardTechIcon {
