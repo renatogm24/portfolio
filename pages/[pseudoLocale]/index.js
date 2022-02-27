@@ -310,10 +310,10 @@ export default function Home({ pseudoLocale, titleHeader }) {
 
         <meta property="og:title" content="Renato Garay" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://renatogaray.dev" />
+        <meta property="og:url" content="https://www.renatogaray.dev" />
         <meta
           property="og:description"
-          content="FullSatck Dev 👨‍💻 Determined. Curious. Self-leaner, who likes new challenges. Telecommunication Engineer"
+          content="Hello, I'm Renato Garay and I'm a Full Stack Web Developer"
         />
         <meta
           property="og:image"
