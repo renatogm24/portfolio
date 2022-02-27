@@ -306,7 +306,21 @@ export default function Home({ pseudoLocale, titleHeader }) {
       <Head>
         <title>{titleHeader}</title>
         <meta name="description" content={packageJson.description} />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo_web.ico" />
+
+        <meta property="og:title" content="Renato Garay" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://renatogaray.dev" />
+        <meta
+          property="og:description"
+          content="FullSatck Dev 👨‍💻 Determined. Curious. Self-leaner, who likes new challenges. Telecommunication Engineer"
+        />
+        <meta
+          property="og:image"
+          content="https://emprendeadvisor.s3.amazonaws.com/renato_garay_dev.png"
+        />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:width" content="1200" />
       </Head>
       <style jsx global>{`
         html,
