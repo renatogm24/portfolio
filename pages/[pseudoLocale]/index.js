@@ -248,32 +248,6 @@ export default function Home({ pseudoLocale, titleHeader }) {
                   {siteInfo.menu[2]}
                 </li>
               </a>
-              <a href="#experience">
-                <li
-                  className={
-                    optionSelected === siteInfo.menu[3] ? styles.active : ""
-                  }
-                  onClick={() => {
-                    setOpenMenu(!openMenu);
-                    setOptionSelected(siteInfo.menu[3]);
-                  }}
-                >
-                  {siteInfo.menu[3]}
-                </li>
-              </a>
-              <a href="#contact">
-                <li
-                  className={
-                    optionSelected === siteInfo.menu[4] ? styles.active : ""
-                  }
-                  onClick={() => {
-                    setOpenMenu(!openMenu);
-                    setOptionSelected(siteInfo.menu[4]);
-                  }}
-                >
-                  {siteInfo.menu[4]}
-                </li>
-              </a>
             </ul>
           </div>
           <div className={styles.navOptions}>
